@@ -44,7 +44,13 @@ function App() {
             <BrowserRouter forceRefresh={false}>
                 <nav style={{ borderBottom: "solid 1px #e8e8e8", overflow: "hidden", boxShadow: "0 0 30px #f3f1f1" }}>
                     <div style={{ width: "200px", float: "left" }}>
-                        <Link to="/"><p style={{ height: "38px", margin: "4px 8px", textAlign: "center", color: "#5b8c00", fontSize: "x-large"}}>Grid View</p></Link>
+                        <Link to="/">
+                            <p style={{ height: "38px", margin: "4px 8px", textAlign: "left", color: "#5b8c00", fontSize: "x-large"}}>
+                                <img src={process.env.PUBLIC_URL + '/grid-view_icon.png'} alt="grid-view logo" className="logo" style={{ height: "24px", margin: "0 12px 6px 0px" }}/>
+                                Grid View
+                            </p>
+                        </Link>
+
                     </div>
                     <div style={{ width: "calc(100% - 200px)", float: "left" }}>
                         <Route>
